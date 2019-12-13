@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="20" failures="20" name="TestSuite" time="2.076" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/ahmsam/eclipse-workspace/AppiOSTests"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="PK"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/ahmsam/eclipse-workspace/AppiOSTests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/qp/sj_rlfjj7yg3m55rb85d_zl00000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/ahmsam/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf17124278273560671131.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ahmsam/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="56.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/ahmsam"/>
+    <property name="user.timezone" value="Asia/Karachi"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="user.name" value="ahmsam"/>
+    <property name="java.class.path" value="/Volumes/Eclipse/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/ahmsam/eclipse-workspace/AppiOSTests/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="TesClass" name="verify" time="1.679">
+    <failure message="Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: &apos;5f99767bda8a53c29a606ed6eed79c605451a11f&apos;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.10.5&apos;, ip: &apos;192.168.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: &apos;5f99767bda8a53c29a606ed6eed79c605451a11f&apos;
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.10.5&apos;, ip: &apos;192.168.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: &apos;5f99767bda8a53c29a606ed6eed79c605451a11f&apos;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.10.5&apos;, ip: &apos;192.168.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: &apos;5f99767bda8a53c29a606ed6eed79c605451a11f&apos;
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.10.5&apos;, ip: &apos;192.168.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:92)
+	at TesClass.verify(TesClass.java:88)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 48 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: &apos;5f99767bda8a53c29a606ed6eed79c605451a11f&apos;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.10.5&apos;, ip: &apos;192.168.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: &apos;5f99767bda8a53c29a606ed6eed79c605451a11f&apos;
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 53 more
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test1" time="0.355">
+    <failure message="Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test1(TesClass.java:106)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test3" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test3(TesClass.java:119)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test4" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test4(TesClass.java:132)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test5" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field MainPage.Training_Guide_Btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field MainPage.Training_Guide_Btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at MainPage.&lt;init&gt;(MainPage.java:21)
+	at TesClass.test5(TesClass.java:146)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test6" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test6(TesClass.java:160)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test7" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test7(TesClass.java:176)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test8" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test8(TesClass.java:188)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test9" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test9(TesClass.java:200)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test10" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test10(TesClass.java:212)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test11" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test11(TesClass.java:224)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test12" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test12(TesClass.java:236)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test13" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test13(TesClass.java:248)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test14" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test14(TesClass.java:260)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test15" time="0.001">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test15(TesClass.java:273)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test16" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test16(TesClass.java:285)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test17" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test17(TesClass.java:296)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test18" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test18(TesClass.java:307)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test19" time="0.003">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test19(TesClass.java:318)
+</failure>
+  </testcase>
+  <testcase classname="TesClass" name="test21" time="0.002">
+    <failure message="Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test21(TesClass.java:340)
+</failure>
+  </testcase>
+</testsuite>

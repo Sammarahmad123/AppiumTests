@@ -1,0 +1,2253 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/20/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 20 11:56:00 PKT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31630 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TesClass.test1()'><b>test1</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test1(TesClass.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1195542839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195542839'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test1(TesClass.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test10()'><b>test10</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test10(TesClass.java:225)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1525114112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1525114112'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test10(TesClass.java:225)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test11()'><b>test11</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test11(TesClass.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace288615534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace288615534'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test11(TesClass.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test12()'><b>test12</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test12(TesClass.java:249)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1416665097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1416665097'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test12(TesClass.java:249)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test13()'><b>test13</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test13(TesClass.java:261)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace619929778", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619929778'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test13(TesClass.java:261)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test14()'><b>test14</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test14(TesClass.java:273)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace808447015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808447015'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test14(TesClass.java:273)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test15()'><b>test15</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test15(TesClass.java:286)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1220806149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1220806149'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test15(TesClass.java:286)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test16()'><b>test16</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test16(TesClass.java:298)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace454160179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454160179'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test16(TesClass.java:298)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test17()'><b>test17</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test17(TesClass.java:309)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace791408866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791408866'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test17(TesClass.java:309)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test18()'><b>test18</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test18(TesClass.java:320)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace569138567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569138567'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test18(TesClass.java:320)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test19()'><b>test19</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test19(TesClass.java:331)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1428494531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1428494531'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test19(TesClass.java:331)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test21()'><b>test21</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test21(TesClass.java:353)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1504321715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504321715'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test21(TesClass.java:353)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test3()'><b>test3</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test3(TesClass.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace130721104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace130721104'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test3(TesClass.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test4()'><b>test4</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test4(TesClass.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1924227192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924227192'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field LoginPage.firstPopUp to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at LoginPage.&lt;init&gt;(LoginPage.java:21)
+	at TesClass.test4(TesClass.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test5()'><b>test5</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field MainPage.Training_Guide_Btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at MainPage.&lt;init&gt;(MainPage.java:23)
+	at TesClass.test5(TesClass.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648458262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648458262'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field MainPage.Training_Guide_Btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at MainPage.&lt;init&gt;(MainPage.java:23)
+	at TesClass.test5(TesClass.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test6()'><b>test6</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test6(TesClass.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1856093404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856093404'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test6(TesClass.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test7()'><b>test7</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test7(TesClass.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace105321150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace105321150'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test7(TesClass.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test8()'><b>test8</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test8(TesClass.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace820878444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820878444'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test8(TesClass.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.test9()'><b>test9</b><br>Test class: TesClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test9(TesClass.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace95322593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95322593'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field ProgrammesPage.continue_btn to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at ProgrammesPage.&lt;init&gt;(ProgrammesPage.java:21)
+	at TesClass.test9(TesClass.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesClass@5e5d171f</td></tr>
+<tr>
+<td title='TesClass.verify()'><b>verify</b><br>Test class: TesClass</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c50:7222:ab71:2cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c50:7222:ab71:2cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:92)
+	at TesClass.verify(TesClass.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 42 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c50:7222:ab71:2cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 47 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1028145537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1028145537'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c50:7222:ab71:2cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c50:7222:ab71:2cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:92)
+	at TesClass.verify(TesClass.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 42 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c50:7222:ab71:2cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.2&apos;
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+xcodebuild error message:
+
+2019-11-20 11:56:30.645 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe69822680 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+2019-11-20 11:56:30.646 xcodebuild[13257:91605] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 &quot;The folder “WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun” doesn’t exist.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/WebDriverAgentRunner_iphoneos12.4-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fbe694f5450 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+** TEST BUILD FAILED **
+2019-11-20 11:56:30.668 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Beginning test session WebDriverAgentRunner-B543F20A-FF44-4514-B4BC-F9DD114E70EC at 2019-11-20 11:56:30.667 with Xcode 10G8 on target 📱&lt;DVTiOSDevice (0x7fbe69c58340), Muhammad’s iPhone, iPhone, 12.1.2 (16C101), 240476512a6dd29a2f82fc8211ef4ea1bf6b5891&gt; {
+		deviceSerialNumber:         F4RNJYTXG5MD
+		identifier:                 240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		deviceClass:                iPhone
+		deviceName:                 Muhammad’s iPhone
+		deviceIdentifier:           240476512a6dd29a2f82fc8211ef4ea1bf6b5891
+		productVersion:             12.1.2
+		buildVersion:               16C101
+		deviceSoftwareVersion:      12.1.2 (16C101)
+		deviceArchitecture:         arm64
+		deviceTotalCapacity:        9672060928
+		deviceAvailableCapacity:    3683008512
+		deviceIsTransient:          NO
+		ignored:                    NO
+		deviceIsBusy:               NO
+		deviceIsPaired:             YES
+		deviceIsActivated:          YES
+		deviceActivationState:      Activated
+		isPasscodeLocked:           NO
+		deviceType:                 &lt;DVTDeviceType:0x7fbe69683ff0 Xcode.DeviceType.iPhone&gt;
+		supportedDeviceFamilies:    (
+    1
+)
+		applications:              (null)
+		provisioningProfiles:      (null)
+		hasInternalSupport:        NO
+		isSupportedOS:             YES
+		developerDiskMountError:   (null)
+(null)
+	bootArgs:                  (null)
+		nextBootArgs:              (null)
+		connected:                 yes
+		isWirelessEnabled:         no
+		connectionType:            direct
+		hostname:                  (null)
+		bonjourServiceName:        a8:5b:78:55:8f:ba@fe80::aa5b:78ff:fe55:8fba._apple-mobdev2._tcp.local.
+		} (12.1.2 (16C101))
+2019-11-20 11:56:30.670 xcodebuild[13257:91576]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-7D5AEC7C-812E-4EC1-8B99-60B5AD94B1C9/WebDriverAgentRunner-D87674CE-77E8-40BB-ABEA-300A18EDB936/Session-WebDriverAgentRunner-2019-11-20_115630-PJAmys.log
+2019-11-20 11:56:30.887 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: (B543F20A-FF44-4514-B4BC-F9DD114E70EC) Finished requesting crash reports. Continuing with testing.
+*** If you believe this error represents a bug, please attach the result bundle at /Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 elapsed -- Testing started completed.
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2019-11-20 11:56:30.908 xcodebuild[13257:91575] [MT] IDETestOperationsObserverDebug: 0.248 sec, +0.248 sec -- end
+2019-11-20 11:56:30.909 xcodebuild[13257:91575] Error Domain=NSCocoaErrorDomain Code=260 &quot;The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file.&quot; UserInfo={NSFilePath=/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fbe693a8da0 {Error Domain=NSPOSIXErrorDomain Code=2 &quot;No such file or directory&quot;}}
+Testing failed:
+	No profiles for &apos;com.facebook.WebDriverAgentRunner&apos; were found: Xcode couldn&apos;t find any iOS App Development provisioning profiles matching &apos;com.facebook.WebDriverAgentRunner&apos;. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target &apos;WebDriverAgentRunner&apos;)
+	No signing certificate &quot;iOS Development&quot; found: No &quot;iOS Development&quot; signing certificate matching team ID &quot;BNL4VQ2576&quot; with a private key was found. (in target &apos;WebDriverAgentLib&apos;)
+	WebDriverAgentRunner:
+		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+Test session results and logs:
+	/Users/ahmsam/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Test-WebDriverAgentRunner-2019.11.20_11-56-30-+0500.xcresult
+** TEST EXECUTE FAILED **
+Testing started on &apos;Muhammad’s iPhone&apos;. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 47 more
+</pre></div></td>
+<td>31</td>
+<td>TesClass@5e5d171f</td></tr>
+</table><p>
+</body>
+</html>
